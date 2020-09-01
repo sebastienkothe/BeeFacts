@@ -13,6 +13,8 @@
 		362BE83124F83BA400101DCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362BE82F24F83BA400101DCB /* Main.storyboard */; };
 		362BE83324F83BAC00101DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362BE83224F83BAC00101DCB /* Assets.xcassets */; };
 		362BE83624F83BAC00101DCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362BE83424F83BAC00101DCB /* LaunchScreen.storyboard */; };
+		362BE84224F8479100101DCB /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362BE84124F8479100101DCB /* Fact.swift */; };
+		36C5B49324F93246007EA49A /* BeeFactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5B49224F93246007EA49A /* BeeFactData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		362BE83224F83BAC00101DCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		362BE83524F83BAC00101DCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		362BE83724F83BAC00101DCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362BE84124F8479100101DCB /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		36C5B49224F93246007EA49A /* BeeFactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeFactData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		362BE82824F83BA400101DCB /* Bee Fact */ = {
 			isa = PBXGroup;
 			children = (
+				362BE83D24F83BC000101DCB /* Model */,
+				362BE83E24F83BC700101DCB /* View */,
+				362BE84024F83BD800101DCB /* Controller */,
 				362BE82924F83BA400101DCB /* AppDelegate.swift */,
 				362BE82B24F83BA400101DCB /* SceneDelegate.swift */,
-				362BE82D24F83BA400101DCB /* ViewController.swift */,
-				362BE82F24F83BA400101DCB /* Main.storyboard */,
 				362BE83224F83BAC00101DCB /* Assets.xcassets */,
-				362BE83424F83BAC00101DCB /* LaunchScreen.storyboard */,
 				362BE83724F83BAC00101DCB /* Info.plist */,
 			);
 			path = "Bee Fact";
+			sourceTree = "<group>";
+		};
+		362BE83D24F83BC000101DCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				362BE84124F8479100101DCB /* Fact.swift */,
+				36C5B49224F93246007EA49A /* BeeFactData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		362BE83E24F83BC700101DCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				362BE83424F83BAC00101DCB /* LaunchScreen.storyboard */,
+				362BE82F24F83BA400101DCB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		362BE84024F83BD800101DCB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				362BE82D24F83BA400101DCB /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				362BE82E24F83BA400101DCB /* ViewController.swift in Sources */,
+				36C5B49324F93246007EA49A /* BeeFactData.swift in Sources */,
 				362BE82A24F83BA400101DCB /* AppDelegate.swift in Sources */,
 				362BE82C24F83BA400101DCB /* SceneDelegate.swift in Sources */,
+				362BE84224F8479100101DCB /* Fact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CQSNJZ5Q2;
 				INFOPLIST_FILE = "Bee Fact/Info.plist";
@@ -293,8 +326,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.sebastienkothe.Bee-Fact";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CQSNJZ5Q2;
 				INFOPLIST_FILE = "Bee Fact/Info.plist";
@@ -311,8 +346,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.sebastienkothe.Bee-Fact";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
